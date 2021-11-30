@@ -1,0 +1,9 @@
+---
+- hosts: wordpress
+  user: ubuntu
+  become: yes
+  roles:
+  - server
+  - php
+  - mysql
+  - wordpress
